@@ -1,0 +1,19 @@
+name: VoiceChatMute
+version: '1.0'
+main: org.doraji.voiceChatMute.VoiceChatMute
+api-version: '1.21'
+depend: [ voicechat ]
+description: 특정 플레이어를 뮤트할 수 있는 Simple Voice Chat 플러그인의 애드온입니다.
+commands:
+  vcmute:
+    description: 특정 플레이어를 뮤트합니다.
+    usage: /vcmute <player>
+    permission: voicechatmute.admin
+  vcunmute:
+    description: 플레이어의 보이스챗 음소거를 해제합니다.
+    usage: /vcunmute <player>
+    permission: voicechatmute.admin
+permissions:
+  voicechatmute.admin:
+    description: 뮤트를 가능하게 해주는 권한입니다.
+    default: op
